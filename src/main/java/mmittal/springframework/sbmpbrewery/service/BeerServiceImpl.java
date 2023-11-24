@@ -1,9 +1,11 @@
 package mmittal.springframework.sbmpbrewery.service;
 
 import mmittal.springframework.sbmpbrewery.web.model.BeerDto;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+@Service
 public class BeerServiceImpl implements BeerService{
     @Override
     public BeerDto getBeerById(UUID beerId) {
